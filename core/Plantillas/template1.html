@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blueviolet;">Hola a todos, me llamo {{nombre}} {{inicial}} y los saludo desde un template!</h1>
+
+    {% for nota in notas %}
+
+        {% if nota >= 6 %}
+            <p style="color: green;">Aprobado con: {{nota}}</p>
+        {% else %}
+            <p style="color: red;">Desaprobado con: {{nota}}</p>
+        {% endif %}
+
+    {% endfor %}
+
+    <h3>Este template fue creado {{ahora}}</h3>
+</body>
+</html>
